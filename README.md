@@ -10,12 +10,46 @@ This README would normally document whatever steps are necessary to get your app
 
 ### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+1. Build Docker Image
+<br/>
+ `docker build -t k8net -f k8Web/Dockerfile .`
+
+2.  Login and publish to DockerHub
+<br/>
+`docker login`
+<br/>
+`docker tag k8net knuckiboy/k8net:latest`
+Push image to DockerHub
+<br/>
+`docker push knuckiboy/k8net:latest`
+
+3. Apply kubernetes deployment.yaml 
+<br/>
+`kubectl apply -f deployment.yaml`
+
+4. Apply kubernetes service.yaml 
+<br/>
+`kubectl apply -f service.yaml
+
+5. Inspect services
+<br/>
+`kubectl describe service k8net-web-service`
+<br/>
+`kubectl get services`
+<br/>
+`kubectl get deployments`
+
+### Starting of MiniKube ###
+1. Starting of minikube & dashboard
+<br/>
+`minikube start`
+<br/>
+`minikube dashboard`
+
+2. Create minikube service tunnel for NodePort
+<br/>
+`minikube service k8net-web-service --url
+`
 
 ### Contribution guidelines ###
 

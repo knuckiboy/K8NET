@@ -1,0 +1,19 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8-net-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: k8-net-web
+  template:
+    metadata:
+      labels:
+        app: k8-net-web
+    spec:
+      containers:
+        - name: k8-net-web
+          image: 'knuckiboy/k8net:latest'
+          ports:
+            - containerPort: 8080
