@@ -2,6 +2,7 @@
 kind: Service
 metadata:
   name: k8net-web-service
+  namespace: dev
 spec:
   selector:
     app: k8-net-web

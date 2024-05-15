@@ -2,6 +2,7 @@
 kind: Deployment
 metadata:
   name: k8-net-web
+  namespace: dev
 spec:
   replicas: 1
   selector:
@@ -17,3 +18,6 @@ spec:
           image: 'knuckiboy/k8net:latest'
           ports:
             - containerPort: 8080
+          env:
+            - name: ASPNETCORE_URLS
+              value: 'http://*:8080'
