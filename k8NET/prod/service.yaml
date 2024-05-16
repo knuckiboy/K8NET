@@ -1,0 +1,15 @@
+﻿apiVersion: v1
+kind: Service
+metadata:
+  name: k8net-web-service
+  namespace: prod
+spec:
+  selector:
+    app: k8-net-web
+  ports:
+  - name: k8net-web-service-port
+    protocol: TCP
+    port: 80
+    targetPort: 80
+    nodePort: 32001
+  type: LoadBalancer
