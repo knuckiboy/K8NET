@@ -2,7 +2,7 @@
 kind: Deployment
 metadata:
   name: k8-net-web
-  namespace: prod
+  namespace: dev
 spec:
   replicas: 1
   selector:
