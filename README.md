@@ -85,5 +85,12 @@ Push image to DockerHub
  - [Access Apps](https://minikube.sigs.k8s.io/docs/handbook/accessing/)
  - [minikube cert](https://minikube.sigs.k8s.io/docs/tutorials/custom_cert_ingress/)
  - [reference](https://stackoverflow.com/questions/58561682/minikube-with-ingress-example-not-working)
+ - [Ingress,TLS,Encrypt](https://medium.com/cloud-native-journey/net-core-on-kubernetes-part-4-ingress-tls-and-lets-encrypt-3f0f6dacde36)
+ - [LB and Ingress](https://medium.com/cloud-native-journey/net-core-on-kubernetes-part-3-load-balancing-and-ingress-2f565bb6a3d4)
+
+ ### References Helm ###
+ = [Kubenetes Components](https://mikehadlow.com/posts/2022-06-24-writing-dotnet-services-for-kubernetes/)
+ - [Helm Example](https://andrewlock.net/deploying-asp-net-core-applications-to-kubernetes-part-4-creating-a-helm-chart-for-an-aspnetcore-app/)
+ - [Helm Example2](https://github.com/saharsh-samples/dotnet-k8s-helm-cicd/blob/develop/deployment/helm-k8s/Chart.yaml)
 
 * Other community or team contact
