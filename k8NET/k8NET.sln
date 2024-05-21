@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "k8Web", "k8Web\k8Web.csproj", "{D8B5B343-F21E-4F8E-87C7-A5CD76837B25}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "k8Api", "k8Api\k8Api.csproj", "{582211E7-A9A5-4C55-8516-981BDB2FCBC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,12 +24,17 @@ Global
 		{D8B5B343-F21E-4F8E-87C7-A5CD76837B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8B5B343-F21E-4F8E-87C7-A5CD76837B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8B5B343-F21E-4F8E-87C7-A5CD76837B25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{582211E7-A9A5-4C55-8516-981BDB2FCBC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{582211E7-A9A5-4C55-8516-981BDB2FCBC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{582211E7-A9A5-4C55-8516-981BDB2FCBC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{582211E7-A9A5-4C55-8516-981BDB2FCBC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D8B5B343-F21E-4F8E-87C7-A5CD76837B25} = {31C4F553-9B99-4E0C-84DE-EA11E2C5FAA5}
+		{582211E7-A9A5-4C55-8516-981BDB2FCBC0} = {31C4F553-9B99-4E0C-84DE-EA11E2C5FAA5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B21F99CE-DB2B-49C0-8224-F282504254A3}

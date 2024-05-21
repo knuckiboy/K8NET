@@ -79,6 +79,23 @@ Push image to DockerHub
 <br/>
 `openssl req -x509 -sha256 -days 356 -nodes -newkey rsa:2048 -keyout server.key -subj "//CN=dev.k8net.com//C=SG//L=Singapore" -out server.crt`
 
+### Create Multinode Cluster ###
+1. Create multi node cluster with minikube
+<br/>
+`minikube start --nodes 2 -p k8netmulti`
+2. Check nodes
+<br>
+`kubectl get nodes`
+3. Check on pods
+<br>
+`minikube service list -p k8netmulti`
+4. Append profile to commands to apply changes to profiles
+`-p `
+
+### Use Helm to deploy K8NET API ###
+1. RUN Helm Upgrade command
+<br>
+`helm upgrade --install k8-net-api . --namespace=dev`
 
 ### References ###
  - [Minikube .NET intro](https://www.hosting.work/aspnet-core-kubernetes-minikube/)
