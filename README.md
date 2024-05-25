@@ -45,6 +45,12 @@ Push image to DockerHub
 <br/>
 `kubectl create secret tls k8net-dev-secrets --namespace dev --key openssl/server.key --cert openssl/server.crt`
 
+7. Create Base64 Cet and Key
+<br>
+```
+cat tls.crt | base64
+cat tls.key | base64
+```
 
 ### Starting of MiniKube ###
 1. Starting of minikube & dashboard
