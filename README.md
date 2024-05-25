@@ -58,10 +58,20 @@ cat tls.key | base64
 `minikube start`
 <br/>
 `minikube dashboard`
+<br>
+`minikube dashboard -p k8netmulti`
 
 2. Create minikube service tunnel for NodePort
 <br/>
 `minikube service k8net-web-service --url --namespace dev`
+
+3. Run minikue start with profile and namespace
+<br>
+`minikube service k8net-web-service -p k8netmulti -n dev`
+
+4. Run tunnel to ingress ports
+<br>
+`minikube tunnel -p k8netmulti`
 
 ### Enable Ingress ###
 1. Addon Ingress to MiniKube
