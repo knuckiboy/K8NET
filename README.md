@@ -93,7 +93,8 @@ cat tls.key | base64
 ### Create Self Signed Cert ###
 1. Create Cert with bash
 <br/>
-`openssl req -x509 -sha256 -days 356 -nodes -newkey rsa:2048 -keyout server.key -subj "//CN=dev.k8net.com//C=SG//L=Singapore" -out server.crt`
+`openssl req -x509 -sha256 -days 356 -nodes -newkey rsa:2048 -keyout server.key -subj /"/CN=dev.k8net.com/C=SG/L=Singapore" -out server.crt`
+`openssl req -x509 -sha256 -days 356 -nodes -newkey rsa:2048 -keyout openssl/api_server.key -subj "//CN=dev.api.k8net.com\C=SG\L=Singapore" -addext "subjectAltName = DNS:dev.api.k8net.com" -out openssl/api_server.crt`
 
 ### Create Multinode Cluster ###
 1. Create multi node cluster with minikube
